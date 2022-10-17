@@ -1,4 +1,4 @@
-main{
+main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -11,4 +11,26 @@ main{
   max-width: 450px;
   margin: 5rem 0;
   background-color: #fff;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px rgb(0, 0, 0, 0.2);
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: #f28ab2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  margin: 1rem auto 0 auto;
+  text-transform: capitalize;
+  cursor: pointer;
 }

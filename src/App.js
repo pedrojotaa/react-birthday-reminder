@@ -1,19 +1,19 @@
 import "./App.css";
 import List from "./List";
 import { data } from "./data";
+import { useState } from "react";
 
 function App() {
-  return(
-
+  const [people, setPeople] = useState(data);
+  return (
     <main>
-      <section className='container'>
-        <h3>{data.length} birthdays today</h3>
-        <List/>
-        <button>clear all</button>
+      <section className="container">
+        <h3>{people.length} birthdays today</h3>
+        <List people={people} />
+        <button className="btn" onClick={()=>{setPeople([])}}>clear all</button>
       </section>
     </main>
-
-  )
+  );
 }
 
 export default App;
