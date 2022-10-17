@@ -1,0 +1,11 @@
+.person{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.person img{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
